@@ -1,0 +1,334 @@
+@media (min-width: 1400px) {body{
+    font-family: Montserrat;
+    background-color: #333131;
+    margin: auto;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 60px;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.contact-button {
+    background-color: #F7AB23;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: white;
+}
+.logo{
+    width: 72px;
+height: 48px;
+flex-shrink: 0;
+background-image: url(Items/ABR\ Logo\ Final\ Output\ \(1\)\ 1.svg);
+background-size: cover;
+background-repeat: no-repeat;
+margin: 0px 0px 0px 20px;
+} 
+main{
+    margin: auto;
+}
+.hero{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 100%;
+    margin: 0 auto;
+}
+.row{
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(Items/Group\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    gap: 2%;
+}
+.col{
+    margin: 0px 0 0px 0px;
+    width: 48%;
+    height: 37.5em;
+}
+.hero h1{
+    margin: 0;
+    font-size: 3rem;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    line-height: 122%;
+}
+.hero p{
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    line-height: 150%;
+    color: #7D7D7D;
+    padding: 16px 0px 32px 0px;
+}
+.hero p b{
+    font-size: 1.5rem;
+    font-family: Montserrat;
+    color: #ffffff;
+    line-height: 150%;
+    font-weight: 600;
+}
+.hero a{
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: Montserrat;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #F7AB23; 
+    padding: 16px 48px;
+    border-radius: 16px;
+    margin: 16px 0px;
+}
+.slider-container {
+    margin-top: 100px;
+    width: 523px;
+    height: 392px;
+    overflow: hidden;
+    position: absolute;
+  }
+  
+  .slide {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: all 1s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slide.active {
+    left: 0;
+    opacity: 1;
+  }
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    background-size: contain;
+  }
+.brands{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brands .container{
+    width: 100%;
+    margin: 0 auto;
+    height: 20vh;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.about .container{
+    margin: 0 auto;
+}
+
+.about .about-row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 80PX;
+}
+.about .col{
+    margin: 100px 0 0px 0px;
+    width: 600px;
+    height: 360px;
+}
+.about .col h2{
+    margin: 0;
+    font-size: 2rem;
+    font-family: Montserrat;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    line-height: 122%;
+}
+.about .col p{
+    margin: 0;
+    font-size: 1rem;
+    font-family: Montserrat;
+    line-height: 150%;
+    color: #7D7D7D;
+    padding: 16px 0px 32px 0px;
+}
+.about .col .Group{
+    width: 100%;
+    height: 100%;
+    background-image: url(Items/Group\ 2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* This is the CSS for the services section */
+.services-section {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    margin-top: 16%;
+}
+ .background-slide {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.background-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    transition: opacity 1.5s ease-in-out;
+    background-position: center;
+} 
+
+.background-slide {
+            position: relative;
+            width: 100%;
+            height: 400px; /* Adjust height as needed */
+            overflow: hidden;
+        }
+        .background-slide img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+             left: 0;
+            transition: opacity 1s ease-in-out;
+        }
+        .background-slide img.active {
+            opacity: 1;
+        }
+.services-section .content {
+    margin-top: 10%;
+    position: relative;
+    z-index: 2;
+}
+.services-section .services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.services-section .service-card {
+    background-color: #444;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.services-section .content img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+.services-section .service-card h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 10px 0;
+}
+.services-section .service-card p {
+    font-size: 0.9rem;
+    color: #ffffff;
+}
+.services-section .service-card:hover {
+    text-decoration: none;
+    background-color: #F7AB23;
+    font-weight: bold;
+    cursor: pointer;
+}
+.services-section .back-text {
+   position: relative;
+}
+.services-section .text {
+   position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+.services-section .text h1{
+    font-size: 2.8rem;
+    color: #fff;
+}
+.services-section .text p{
+    font-size: 1.2rem;
+    color: #fff;
+}
+.footer {
+    margin-top: 10%;
+    background-color: #3a3a3a;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: auto;
+}
+
+.footer-menu a, .footer-details p {
+    color: white;
+    text-decoration: none;
+    margin: 5px;
+}
+
+.footer-social img {
+    width: 30px;
+    margin: 5px;
+}
+
+}
